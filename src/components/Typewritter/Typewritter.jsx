@@ -33,9 +33,9 @@ export const Typewritter = (props) => {
       deleteTxt = true;
     }
     if (deleteTxt) {
-      time /= 1;
+      time /= 1.2;
     }
-    if (letter.length === 0) {
+    if (letter.length === 1) {
       time = writing;
       deleteTxt = false;
       count++;
