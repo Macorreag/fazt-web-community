@@ -2,5 +2,20 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    height: 400px;
+  
+
+    &__title{
+        font-size: 25px;
+        font-family: 'Roboto',sans-serif;
+        color: #FF0039
+    }
+
+    &__desc{
+        width: 90%;
+        font-size: 15px;
+        text-align: center;
+        font-family: 'Roboto',sans-serif;
+        margin: 0 0 1rem 0;
+    }
 }
+
