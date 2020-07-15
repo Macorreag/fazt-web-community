@@ -1,0 +1,132 @@
+.image{
+    float: left;
+    overflow: hidden;
+    margin-left: 5%;
+    margin-right: 4%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    &__1{
+        width:130px;
+        height:130px;
+        border-radius:150px;
+        border: 5px solid #dad5d5;  
+    }
+    &__3{
+        width: 35px;
+        height: 35px;
+        margin-top: 45%;
+    }
+}
+.Title{
+    &__1{
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 54px;
+        color: #FF0039;
+    }
+    &__2{
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 41px;
+        color: #333333;
+    }
+    &__3{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 21px;
+        color: #333333;
+
+    }
+    &__4{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 47px;
+        color: #333333;
+    }
+}
+.UserInfo{
+    overflow: hidden;
+    margin: 50px 0;
+}
+.hab{
+    margin-right: 120px;
+    margin-left: 150px;
+    text-align: center;
+    &__2{
+        overflow: hidden;
+    }
+}
+.user-description{
+    padding-right: 150px;
+    display: flex;
+    float: right;
+    overflow: hidden;
+}
+.user-hover{
+    float: left;
+    overflow: hidden;
+    margin-right: 10px;
+    &__2 {
+        float: left;
+        margin-top: 10%;
+        
+    }
+    &__3 {
+        margin-top: 18%;
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 21px;
+        color: #333333;
+        text-decoration: none;
+    }
+    &__4 {
+        margin-top: 58%;
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 21px;
+        color: #333333;
+        text-decoration: none;
+    }
+}
+.user-logos{
+    padding-bottom: 30px;
+    &__0{
+        float: left;
+        padding-right: 0px;
+        
+    }
+    &__2{
+        float: left;
+        padding-right: 0px;
+    }
+    &__4{
+        float: left;
+        padding-right: 0px;
+    }
+}
+.user-logo{
+    &__1{
+        width: 45px;
+        height: 45px;
+    }
+    &__2{
+        text-align: center;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 21px;
+        color: #333333;
+    }
+    
+}
