@@ -4,6 +4,8 @@ import React from 'react';
 import './Navigation.scss';
 import faztCommunity from '@assets/img/faztCommunity.png';
 
+import { ButtonSolid, ButtonUnline } from '../Buttons/Buttons'
+
 const Navegation = () => {
   return (
     <div className="navigation">
@@ -15,8 +17,8 @@ const Navegation = () => {
       </ul>
       <img className="navigation__image" src={faztCommunity} alt="fazt-community" />
       <ul className="navigation__ul-rightSide">
-        <li className="navigation__li">Iniciar sesión</li>
-        <li className="navigation__li">Registrarse</li>
+        <li className="navigation__right__li"><ButtonUnline text="Registrarse" /></li>
+        <li className="navigation__right__li"><ButtonSolid text="Iniciar Sesión" /></li>
       </ul>
     </div>
   );
