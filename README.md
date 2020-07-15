@@ -3,6 +3,7 @@
 ## Table of contents
 - [Documentation of Fazt Community](https://github.com/faztcommunity/docs)
 - [Commands](#commands)
+- [First Steps and Assets](#first-steps-and-assets)
 - [How to format code](#how-to-format-code)
 	- [Install Prettier extension](#install-prettier-extension)
 	- [Configure Prettier as default formatter](#configure-prettier-as-default-formatter)
@@ -29,6 +30,21 @@ Once you have it installed, you should go to Settings and search for "Editor: De
 
 ![Settings](https://i.imgur.com/LHzoGJF.png)
 ![Select default formatter](https://i.imgur.com/4Q4cDCa.png)
+
+## First Steps and Assets
+1. Design: [Figma - Final Layout Landing Page](https://www.figma.com/file/GYznCdV8s9et2ti64NJm0j/Fazt-Web?node-id=0%3A1).
+2. [Tasks Projects in Trello](https://trello.com/b/WIfgs0g6/principal). You can choose a task and asign it to you (if other user don't have it.)
+3. Steps to push a change:  
+```
+git clone
+cd REPO_NAME
+git checkout -b subject/title
+git add YOUR CHANGED FILES
+git commit -m subject(type): short description
+git push origin FEATURE_NAME
+
+Open GitHub and press Pull Request. Add title and again press Pull Request.
+```
 
 ### Format code
 Once you have Prettier as default formatter, you have to press the right button of your mouse on the file you want to format and select "Format Document".
