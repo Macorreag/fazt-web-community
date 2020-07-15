@@ -76,5 +76,15 @@
             transition: color .3s ease;
         }
     }
+    .icon {
+      margin-right: 5px;
+      height: 2rem;
+      width: 2rem;
+      border-radius: 5px;
+      margin-left: 30px;
+    }
+    .icon--circule {
+      border-radius: 50%;
+    }
   }
 
