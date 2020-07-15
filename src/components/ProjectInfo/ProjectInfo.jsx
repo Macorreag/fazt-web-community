@@ -49,10 +49,12 @@ const ProjectInfo = ({
           <h1 className="title__1">{projectName}</h1>
           <h2 className="title__2">Descripcion del proyecto</h2>
           <p className="title__3">{projectDescription}</p>
+          <div className="techLogo" >
           <h2 className="title__2">Tecnologia usada</h2>
-          <div>
-            {arrayTech.map((item) => (
-              <TechLogo logo={process.env.PUBLIC_URL + item.url} text={item.name} />
+            {arrayTech.map((item, i) => (
+              <div key={i}>
+                <TechLogo logo={process.env.PUBLIC_URL + item.url} text={item.name}/>
+              </div>
             ))}
           </div>
         </div>
@@ -60,7 +62,7 @@ const ProjectInfo = ({
     </div>
   );
 };
-projectInfo.propTypes = {
+ProjectInfo.propTypes = {
   projectName: PropTypes.string.isRequired,
   projectDescription: PropTypes.string.isRequired,
   projectImage: PropTypes.string.isRequired,
@@ -68,7 +70,7 @@ projectInfo.propTypes = {
   projectGit: PropTypes.string,
   projectURL: PropTypes.string
 };
-projectInfo.defaultProps = {
+ProjectInfo.defaultProps = {
   projectName: 'Nombre del proyecto',
   projectDescription:
     'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi eos perspiciatis nemo itaque voluptatum odio architecto esse! Ipsa, quas modi.',

@@ -28,7 +28,7 @@
   &__3 {
     font-family: Roboto;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 21px;
     color: #333333;
   }
@@ -81,4 +81,12 @@
 .projectInfo {
   overflow: hidden;
   margin: 5% 0;
+}
+.technologies{
+  &__1{
+    padding-right: 15px;
+  }
+}
+.techLogo{
+  margin-top: 17px;
 }
