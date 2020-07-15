@@ -7,7 +7,7 @@ import URL from './svg/url.svg';
 import TechLogo from '../TechLogos/TechLogos.jsx';
 import PropTypes from 'prop-types';
 
-const projectInfo = ({
+const ProjectInfo = ({
   projectName,
   projectImage,
   projectDescription,
@@ -91,4 +91,4 @@ projectInfo.defaultProps = {
   projectURL: ''
 };
 
-export default projectInfo;
+export default ProjectInfo;
