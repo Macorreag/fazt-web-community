@@ -50,6 +50,6 @@ export const Typewritter = (props) => {
   );
 };
 
-Typewritter.defaltProps = {
-  text: 'colca un texto'
+Typewritter.defaultProps = {
+  text: 'Coloca un texto'
 };
