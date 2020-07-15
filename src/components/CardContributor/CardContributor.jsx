@@ -20,7 +20,7 @@ const CardContributor = () => {
             <div
               className="contributor__backgroundImage"
               style={{
-                backgroundImage: `url(${availableImage})`,
+                backgroundImage: `url(${availableImage})`
               }}
             ></div>
             <div className="contributor__img">

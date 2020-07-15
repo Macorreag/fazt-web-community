@@ -55,7 +55,7 @@ const CardProyect = ({ nameProyect, imageUrl, arrayProyects, favAmount, size }) 
   var backgroundStyle = {
     backgroundImage: `url(${imageUrl})`,
     backgroundPosition: 'center center',
-    backgroundSize: 'cover',
+    backgroundSize: 'cover'
   };
 
   const styleCard = (size) => {
@@ -64,28 +64,28 @@ const CardProyect = ({ nameProyect, imageUrl, arrayProyects, favAmount, size }) 
         height: '150',
         width: '100',
         fontTitle: 'small',
-        fontDesc: 'x-small',
+        fontDesc: 'x-small'
       };
     } else if (size === 'm-card') {
       return {
         height: '300',
         width: '200',
         fontTitle: 'large',
-        fontDesc: 'medium',
+        fontDesc: 'medium'
       };
     } else if (size === 'b-card') {
       return {
         height: '600',
         width: '500',
         fontTitle: 'xx-large',
-        fontDesc: 'x-large',
+        fontDesc: 'x-large'
       };
     } else {
       return {
         height: '200',
         width: '150',
         fontTitle: 'medium',
-        fontDesc: 'small',
+        fontDesc: 'small'
       };
     }
   };
@@ -95,7 +95,7 @@ const CardProyect = ({ nameProyect, imageUrl, arrayProyects, favAmount, size }) 
       className="proyectCard"
       style={{
         height: `${styleCard(size).height}px`,
-        width: `${styleCard(size).width}px`,
+        width: `${styleCard(size).width}px`
       }}
     >
       <div className="proyectCard__background" style={backgroundStyle}>
@@ -165,7 +165,7 @@ CardProyect.propTypes = {
   nameProyect: PropTypes.string.isRequired,
   imageUrl: PropTypes.string,
   arrayProyects: PropTypes.array,
-  favAmount: PropTypes.string.isRequired,
+  favAmount: PropTypes.string.isRequired
 };
 
 CardProyect.defaultProps = {
@@ -175,22 +175,22 @@ CardProyect.defaultProps = {
     {
       name: 'NotFound',
       url: '/img/icons/notfound.svg',
-      color: '#E04149',
+      color: '#E04149'
     },
     {
       name: 'NotFound',
       url: '/img/icons/notfound.svg',
-      color: '#E04149',
+      color: '#E04149'
     },
     {
       name: 'NotFound',
       url: '/img/icons/notfound.svg',
-      color: '#E04149',
-    },
+      color: '#E04149'
+    }
   ],
   favAmount: '-7',
   size: 'm-card',
-  theme: 'white',
+  theme: 'white'
 };
 
 export default CardProyect;

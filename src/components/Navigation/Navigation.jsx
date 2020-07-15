@@ -2,7 +2,7 @@
 
 import React from 'react';
 import './Navigation.scss';
-import faztCommunity from "@assets/img/faztCommunity.png";
+import faztCommunity from '@assets/img/faztCommunity.png';
 
 const Navegation = () => {
   return (

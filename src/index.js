@@ -5,7 +5,7 @@ import * as serviceWorker from './serviceWorker';
 
 // ASSETS
 import './assets/scss/main.scss';
-import './assets/fonts/fonts.scss'
+import './assets/fonts/fonts.scss';
 
 ReactDOM.render(
   <React.StrictMode>

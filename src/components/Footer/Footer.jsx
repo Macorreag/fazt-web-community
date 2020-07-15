@@ -21,11 +21,11 @@ const Footer = () => {
       </ul>
       <div className="footer__ul rightSide">
         <div className="footer__icons">
-          <img src={discordIcon} alt=""/>
-          <img src={githubIcon} alt=""/>
+          <img src={discordIcon} alt="" />
+          <img src={githubIcon} alt="" />
         </div>
         <div className="footer__goUp">
-          <img src={arrowUp} alt=""/>
+          <img src={arrowUp} alt="" />
         </div>
       </div>
     </div>
