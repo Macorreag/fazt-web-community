@@ -4,23 +4,26 @@
         background-color: rgba(0, 0, 0, 0.2);
         backdrop-filter: blur(5px);
     }
+
     100% {
         background-color: rgba(0, 0, 0, 0.35);
         backdrop-filter: blur(10px);
     }
-  }
-  @keyframes offFocusCard {
+}
+
+@keyframes offFocusCard {
     0% {
         background-color: rgba(0, 0, 0, 0.35);
         backdrop-filter: blur(10px);
     }
+
     100% {
         background-color: rgba(0, 0, 0, 0.2);
         backdrop-filter: blur(5px);
     }
-  }
+}
 
-.proyectCard {
+.projectCard {
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -50,14 +53,15 @@
         background-color: rgba(0, 0, 0, 0.2);
         backdrop-filter: blur(5px);
         animation: offFocusCard 1s ease;
-        &:hover{
+
+        &:hover {
             background-color: rgba(0, 0, 0, 0.35);
             backdrop-filter: blur(10px);
             cursor: pointer;
             animation: onFocusCard .5s ease;
-        
+
         }
-        
+
 
         &__upSide {
             width: 100%;
@@ -77,7 +81,7 @@
                 &__image {
                     height: 80%;
 
-                   
+
                 }
             }
 
@@ -159,7 +163,7 @@
             background-color: #FFFFFF;
             transition: background-color .3s ease-out;
 
-            &__nameProyect {
+            &__nameProject {
                 text-align: center;
                 font-family: 'Roboto', Arial, Helvetica, sans-serif;
                 font-weight: 600;

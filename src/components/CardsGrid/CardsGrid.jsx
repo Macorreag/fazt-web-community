@@ -1,10 +1,21 @@
+/* Copyright 2020 Fazt Community ~ All rights reserved. MIT license. */
+/**
+ * <Component for showing details of the proyect>
+ * @component
+ * @param   {String}    size            Size of Card (Small / Medium / Big)
+ * @param   {String}    theme           Theme of Component (For Future implementations)
+ * @param   {String}    nameProject     Name of Proyect
+ * @param   {String}    imageUrl        Url Of Image Proyect
+ * @param   {Array}     arrayProjects   Array of Technologies
+ * @param   {Number}    favAmount       Amount of Favorites
+ * @return  {<CardProyect>}
+ */
 import React, { useEffect, useState } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import CardProject from '../CardProject/CardProject';
 import './CardsGrid.scss';
-import CardProyect from '../CardProyect/CardProyect';
 import { ButtonSolid } from '../Buttons/Buttons';
 function CardsGrid() {
-
   const [Data, setData] = useState([]);
   const [Fetch, setFetch] = useState([]);
 
@@ -45,35 +56,45 @@ function CardsGrid() {
       <div className="containerGrid__cardsGrid">
         {Fetch ? (
           <>
-            <TransitionGroup appear={true} enter={false} exit={false} className="containerGrid__cardsGrid__primary">
+            <TransitionGroup
+              appear={true}
+              enter={false}
+              exit={false}
+              className="containerGrid__cardsGrid__primary"
+            >
               {Data.slice(0, 1).map((item) => (
                 <CSSTransition key={item._id} timeout={1500} classNames="item">
-                  <CardProyect 
-                  id={item._id} 
-                  key={item._id}
-                  nameProyect={item.nameProyect}
-                  imageUrl={item.imageUrl}
-                  favAmount={item.favAmount}
-                  arrayProyects={item.arrayProyects}
-                  size={'b-card'}
-                  theme={'white'}
+                  <CardProject
+                    id={item._id}
+                    key={item._id}
+                    nameProyect={item.nameProyect}
+                    imageUrl={item.imageUrl}
+                    favAmount={item.favAmount}
+                    arrayProyects={item.arrayProyects}
+                    size={'b-card'}
+                    theme={'white'}
                   />
                 </CSSTransition>
               ))}
             </TransitionGroup>
 
-            <TransitionGroup appear={true} enter={false} exit={false}  className="containerGrid__cardsGrid__secondary">
+            <TransitionGroup
+              appear={true}
+              enter={false}
+              exit={false}
+              className="containerGrid__cardsGrid__secondary"
+            >
               {Data.slice(1, 9).map((item) => (
                 <CSSTransition key={item._id} timeout={1500} classNames="item">
-                   <CardProyect 
-                  id={item._id} 
-                  key={item._id}
-                  nameProyect={item.nameProyect}
-                  imageUrl={item.imageUrl}
-                  favAmount={item.favAmount}
-                  arrayProyects={item.arrayProyects}
-                  size={'m-card'}
-                  theme={'white'}
+                  <CardProject
+                    id={item._id}
+                    key={item._id}
+                    nameProyect={item.nameProyect}
+                    imageUrl={item.imageUrl}
+                    favAmount={item.favAmount}
+                    arrayProyects={item.arrayProyects}
+                    size={'m-card'}
+                    theme={'white'}
                   />
                 </CSSTransition>
               ))}
@@ -81,7 +102,7 @@ function CardsGrid() {
           </>
         ) : (
           <>
-          <span className="containerGrid__cardsGrid-textError">Error al cargar Proyectos</span>
+            <span className="containerGrid__cardsGrid-textError">Error al cargar Proyectos</span>
           </>
         )}
       </div>

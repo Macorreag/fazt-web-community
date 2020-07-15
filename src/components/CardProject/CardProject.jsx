@@ -1,29 +1,16 @@
 /* Copyright 2020 Fazt Community ~ All rights reserved. MIT license. */
-
-/**
- * <Component for showing details of the proyect>
- * @component
- * @param   {String}    size            Size of Card (Small / Medium / Big)
- * @param   {String}    theme           Theme of Component (For Future implementations)
- * @param   {String}    nameProyect     Name of Proyect
- * @param   {String}    imageUrl        Url Of Image Proyect
- * @param   {Array}     arrayProyects   Array of Technologies
- * @param   {Number}    favAmount       Amount of Favorites
- * @return  {<CardProyect>}
- */
-
 import React from 'react';
 import PropTypes from 'prop-types';
-import './CardProyect.scss';
+import './CardProject.scss';
 import heartIcon from '../../img/icons/heart.svg';
 import { usePalette } from 'react-palette';
 
-const CardProyect = ({ id, nameProyect, imageUrl, arrayProyects, favAmount, size }) => {
+const CardProject = ({ id, nameProject, imageUrl, arrayProjects, favAmount, size }) => {
   var { data } = usePalette(imageUrl);
   data = data.vibrant;
   if (!imageUrl) {
-    data = arrayProyects[0].color;
-    imageUrl = process.env.PUBLIC_URL + arrayProyects[0].url;
+    data = arrayProjects[0].color;
+    imageUrl = process.env.PUBLIC_URL + arrayProjects[0].url;
   }
   var backgroundStyle = {
     backgroundImage: `url(${imageUrl})`,
@@ -56,37 +43,35 @@ const CardProyect = ({ id, nameProyect, imageUrl, arrayProyects, favAmount, size
   };
 
   return (
-    <div
-      className="proyectCard"
-    >
-      <div className="proyectCard__background" style={backgroundStyle}>
-        <div className="proyectCard__container">
-          <div className="proyectCard__container__upSide">
-            <div className="proyectCard__container__upSide__containerImage">
-              <img className="proyectCard__container__upSide__containerImage__image" src={imageUrl} alt="" />
+    <div className="projectCard">
+      <div className="projectCard__background" style={backgroundStyle}>
+        <div className="projectCard__container">
+          <div className="projectCard__container__upSide">
+            <div className="projectCard__container__upSide__containerImage">
+              <img className="projectCard__container__upSide__containerImage__image" src={imageUrl} alt="" />
             </div>
-            <div className="proyectCard__container__upSide__containerBar">
-              <div className="proyectCard__container__upSide__containerBar__icons">
-                {arrayProyects.slice(0, 3).map((item, i) => (
+            <div className="projectCard__container__upSide__containerBar">
+              <div className="projectCard__container__upSide__containerBar__icons">
+                {arrayProjects.slice(0, 3).map((item, i) => (
                   /*for now the items do not redirect missing add the routes*/
                   <img
                     key={i}
-                    className="proyectCard__container__upSide__containerBar__icons__iconArray"
+                    className="projectCard__container__upSide__containerBar__icons__iconArray"
                     src={process.env.PUBLIC_URL + item.url}
                     alt=""
                     srcSet=""
                   />
                 ))}
               </div>
-              <div className="proyectCard__container__upSide__containerBar__fav">
+              <div className="projectCard__container__upSide__containerBar__fav">
                 <span
-                  className="proyectCard__container__upSide__containerBar__fav__favAmount"
+                  className="projectCard__container__upSide__containerBar__fav__favAmount"
                   style={{ fontSize: styleCard(size).fontDesc }}
                 >
                   {favAmount}
                 </span>
                 <img
-                  className="proyectCard__container__upSide__containerBar__fav__favIcon"
+                  className="projectCard__container__upSide__containerBar__fav__favIcon"
                   src={heartIcon}
                   alt=""
                   srcSet=""
@@ -95,23 +80,25 @@ const CardProyect = ({ id, nameProyect, imageUrl, arrayProyects, favAmount, size
             </div>
           </div>
           <div
-            id={`proyectCard__container__downSide-id${id}`}
-            className="proyectCard__container__downSide"
+            id={`projectCard__container__downSide-id${id}`}
+            className="projectCard__container__downSide"
             onMouseEnter={() => {
-              document.getElementById(`proyectCard__container__downSide-id${id}`).style.backgroundColor =
+              document.getElementById(`projectCard__container__downSide-id${id}`).style.backgroundColor =
                 '#DB224A';
-              document.getElementById(`proyectCard__container__downSide-id${id}`).style.cursor = 'pointer';
+              document.getElementById(`projectCard__container__downSide-id${id}`).style.cursor = 'pointer';
             }}
             onMouseLeave={() => {
-              document.getElementById(`proyectCard__container__downSide-id${id}`).style.backgroundColor = data;
+              document.getElementById(
+                `projectCard__container__downSide-id${id}`
+              ).style.backgroundColor = data;
             }}
             style={{ backgroundColor: data }}
           >
             <span
-              className="proyectCard__container__downSide__nameProyect"
+              className="projectCard__container__downSide__nameProject"
               style={{ fontSize: styleCard(size).fontTitle }}
             >
-              {nameProyect}
+              {nameProject}
             </span>
           </div>
         </div>
@@ -120,21 +107,21 @@ const CardProyect = ({ id, nameProyect, imageUrl, arrayProyects, favAmount, size
   );
 };
 
-CardProyect.propTypes = {
+CardProject.propTypes = {
   id: PropTypes.number,
   size: PropTypes.string,
   theme: PropTypes.string,
-  nameProyect: PropTypes.string.isRequired,
+  nameProject: PropTypes.string.isRequired,
   imageUrl: PropTypes.string,
-  arrayProyects: PropTypes.array,
+  arrayProjects: PropTypes.array,
   favAmount: PropTypes.string.isRequired,
 };
 
-CardProyect.defaultProps = {
+CardProject.defaultProps = {
   id: 0,
-  nameProyect: 'Missing Project',
+  nameProject: 'Missing Project',
   imageUrl: '',
-  arrayProyects: [
+  arrayProjects: [
     {
       name: 'NotFound',
       url: '/img/icons/notfound.svg',
@@ -156,4 +143,4 @@ CardProyect.defaultProps = {
   theme: 'white',
 };
 
-export default CardProyect;
+export default CardProject;
