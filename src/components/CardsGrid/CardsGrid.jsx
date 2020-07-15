@@ -50,7 +50,7 @@ function CardsGrid() {
   return (
     <div className="containerGrid">
       <div className="containerGrid__titleGrid">
-        <span className="containerGrid__titleGrid-t1">NUESTROS</span>{' '}
+        <span className="containerGrid__titleGrid-t1">NUESTROS </span>
         <span className="containerGrid__titleGrid-t2">PROYECTOS</span>
       </div>
       <div className="containerGrid__cardsGrid">

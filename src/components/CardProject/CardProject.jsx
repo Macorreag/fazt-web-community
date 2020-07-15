@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './CardProject.scss';
-import heartIcon from '../../img/icons/heart.svg';
+import heartIcon from '@assets/img/icons/heart.svg';
 import { usePalette } from 'react-palette';
 
 const CardProject = ({ id, nameProject, imageUrl, arrayProjects, favAmount, size }) => {

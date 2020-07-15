@@ -1,6 +1,6 @@
 /* Copyright 2020 Fazt Community ~ All rights reserved. MIT license. */
 
-@import "../Sources/Sources.scss";
+@import '@assets/scss/variables';
 
 .footer {
   background: $night-color;
@@ -8,6 +8,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   padding: 0 61px;
   height: 90px;
+
   &__li {
     font-size: 20px;
     margin-left: 10px;
@@ -17,6 +18,7 @@
     font-weight: small;
     color: $textprimary-color;
   }
+
   &__ul {
     display: flex;
     align-items: center;
@@ -31,6 +33,7 @@
       justify-content: flex-end;
     }
   }
+
   &__icons {
     margin: 0 50px;
     img {
@@ -38,6 +41,7 @@
       cursor: pointer;
     }
   }
+
   &__goUp {
     border: 2px solid $textprimary-color;
     width: 38px;
@@ -46,6 +50,5 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-
   }
 }

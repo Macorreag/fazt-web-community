@@ -1,7 +1,9 @@
+/* Copyright 2020 Fazt Community ~ All rights reserved. MIT license. */
+
 import React, { Fragment, useState } from 'react';
 import './CardContributor.scss';
 import Skill from '../Skill/Skill';
-import FaztLogo from '../../img/FaztLogo.svg';
+import FaztLogo from '@assets/img/icons/FaztLogo.svg';
 
 const CardContributor = () => {
   const [nameVisble, setNameVisibility] = useState(false);
@@ -18,7 +20,7 @@ const CardContributor = () => {
             <div
               className="contributor__backgroundImage"
               style={{
-                backgroundImage: `url(${availableImage})`,
+                backgroundImage: `url(${availableImage})`
               }}
             ></div>
             <div className="contributor__img">

@@ -1,6 +1,6 @@
 /* Copyright 2020 Fazt Community ~ All rights reserved. MIT license. */
 
-@import "../Sources/Sources.scss";
+@import '@assets/scss/variables';
 
 .ComponentBTNSolidClass {
     background-color: $primary-color;
@@ -33,9 +33,13 @@
         border-radius: 50px;
         transition: background-color .3s ease;
 
-    }
+  &:hover {
+    background-color: $pink-color;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+  }
 }
-
+}
 .ComponentBTNUnlineClass {
     background-color: none;
     border: 2px solid $primary-color;
@@ -72,4 +76,5 @@
             transition: color .3s ease;
         }
     }
-}
+  }
+
