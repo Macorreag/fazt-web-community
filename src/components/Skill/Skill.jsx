@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './Skill.scss';
 const Skill = ({ image }) => {
   return (

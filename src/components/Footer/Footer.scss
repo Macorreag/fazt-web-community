@@ -1,0 +1,54 @@
+/* Copyright 2020 Fazt Community ~ All rights reserved. MIT license. */
+
+@import '@assets/scss/variables';
+
+.footer {
+  background: $night-color;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 61px;
+  height: 90px;
+
+  &__li {
+    font-size: 20px;
+    margin-left: 10px;
+    display: inline-flex;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    font-weight: small;
+    color: $textprimary-color;
+  }
+
+  &__ul {
+    display: flex;
+    align-items: center;
+    border: 1px solid red;
+    ~ .leftSide {
+      justify-content: flex-start;
+    }
+    ~ .centerSide {
+      justify-content: center;
+    }
+    ~ .rightSide {
+      justify-content: flex-end;
+    }
+  }
+
+  &__icons {
+    margin: 0 50px;
+    img {
+      margin: 0 12px;
+      cursor: pointer;
+    }
+  }
+
+  &__goUp {
+    border: 2px solid $textprimary-color;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+}

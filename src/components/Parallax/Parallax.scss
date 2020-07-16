@@ -1,0 +1,70 @@
+/* Copyright 2020 Fazt Community ~ All rights reserved. MIT license. */
+@import '@assets/scss/variables';
+* {
+  margin: 0;
+  padding: 0;
+}
+.Parallax {
+  background: linear-gradient(119.36deg, #ff0039 0%, #c00044 0.01%, #81004f 100%);
+  width: 100%;
+  height: 100vh;
+
+  .circuito {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+      font-size: 50px;
+      color: $textprimary-color;
+    }
+    p {
+      font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      color: $textprimary-color;
+    }
+  }
+
+  &__redes {
+    margin: 10px 20px;
+    align-self: flex-end;
+    .ComponentBTNUnlineClass {
+      display: inline-flex;
+      align-items: center;
+      margin: 0px 10px;
+      background-color: $textprimary-color;
+      &:hover {
+        background-color: $pink-color;
+      }
+      span {
+        margin-left: 0;
+      }
+    }
+  }
+  .arrow {
+    font-size: 100px;
+    color: $textprimary-color;
+    animation: 2s infinite boing;
+  }
+  @keyframes boing {
+    0% {
+      transform: translateY(5px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(5px);
+    }
+  }
+}

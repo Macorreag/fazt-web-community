@@ -2,7 +2,7 @@
 
 import React from 'react';
 import './Navigation.scss';
-import faztCommunity from '../../img/faztCommunity.png';
+import faztCommunity from '@assets/img/faztCommunity.png';
 
 const Navegation = () => {
   return (
@@ -15,8 +15,8 @@ const Navegation = () => {
       </ul>
       <img className="navigation__image" src={faztCommunity} alt="fazt-community" />
       <ul className="navigation__ul-rightSide">
-        <li className="navigation__li">Registrarse</li>
         <li className="navigation__li">Iniciar sesión</li>
+        <li className="navigation__li">Registrarse</li>
       </ul>
     </div>
   );
