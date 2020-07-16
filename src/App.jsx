@@ -4,6 +4,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Navigation from './components/Navigation/Navigation.jsx';
+import Footer from './components/Footer/Footer.jsx';
 import Parallax from './components/Parallax/Parallax.jsx';
 import Footer from './components/Footer/Footer.jsx';
 
