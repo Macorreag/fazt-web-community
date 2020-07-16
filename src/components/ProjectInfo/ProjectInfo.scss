@@ -1,0 +1,92 @@
+.Image {
+  float: left;
+  margin-left: 7%;
+  margin-right: 3%;
+  &__1 {
+    width: 380px;
+    height: 260px;
+  }
+  &__3 {
+    margin-top: 60%;
+    width: 35px;
+    height: 35px;
+  }
+}
+.title {
+  &__1 {
+    font-family: OpenSans;
+    font-size: 27px;
+    color: #ff0039;
+    line-height: 50px;
+  }
+  &__2 {
+    font-family: Roboto;
+    font-size: 19px;
+    line-height: 35px;
+    color: #333333;
+  }
+  &__3 {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+  }
+  &__4 {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 35px;
+    color: #333333;
+  }
+}
+.hover {
+  float: left;
+  margin-right: 5%;
+  &__2 {
+    float: left;
+    margin-top: 10%;
+    margin-right: 0%;
+  }
+  &__3 {
+    margin-top: 18%;
+    margin-left: 0%;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+    color: #333333;
+    text-decoration: none;
+  }
+  &__4 {
+    margin-top: 58%;
+    margin-left: 0%;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+    color: #333333;
+    text-decoration: none;
+  }
+} 
+.description {
+  margin-top: 1%;
+  &__2 {
+    overflow: hidden;
+    float: right;
+    margin-right: 15%;
+    margin-left: 2%;
+  }
+}
+.projectInfo {
+  overflow: hidden;
+  margin: 5% 0;
+}
+.technologies{
+  &__1{
+    padding-right: 15px;
+  }
+}
+.techLogo{
+  margin-top: 17px;
+}
