@@ -51,6 +51,7 @@ Now every time that you edit or create a new code, you should format it before c
     <td align="center"><a href="https://github.com/adranuz"><img src="https://avatars1.githubusercontent.com/u/60374995" width="100px;" alt=""/><br /><sub><b>adranuz</b></sub></a></td>
     <td align="center"><a href="https://github.com/nicksiuxs"><img src="https://avatars1.githubusercontent.com/u/25460833" width="100px;" alt=""/><br /><sub><b>nicksiuxs</b></sub></a></td>
     <td align="center"><a href="https://github.com/aimarandony"><img src="https://avatars1.githubusercontent.com/u/68049711" width="100px;" alt=""/><br /><sub><b>aimarandony</b></sub></a></td>
+    <td align="center"><a href="https://github.com/CoffeJeanCode"><img src="https://avatars0.githubusercontent.com/u/45444014?s=400&u=f65bcc832a489362703968f8dec2f674c06d3566&v=4" width="100px;" alt=""/><br /><sub><b>coffe-jean-code</b></sub></a></td>
   </tr>
 </table>
 
