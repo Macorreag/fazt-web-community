@@ -1,3 +1,5 @@
+/* Copyright 2020 Fazt Community ~ All rights reserved. MIT license. */
+
 import React, { Fragment, useState } from 'react';
 import './CardContributor.scss';
 import Skill from '../Skill/Skill';
@@ -18,7 +20,7 @@ const CardContributor = () => {
             <div
               className="contributor__backgroundImage"
               style={{
-                backgroundImage: `url(${availableImage})`,
+                backgroundImage: `url(${availableImage})`
               }}
             ></div>
             <div className="contributor__img">
